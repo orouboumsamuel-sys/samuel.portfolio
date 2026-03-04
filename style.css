@@ -1,0 +1,291 @@
+:root {
+    --primary: #2563eb;
+    --dark: #111827;
+    --light: #f9fafb;
+    --gray: #6b7280;
+}
+
+body {
+    background-color: yellow !important;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header{
+    background-color: #111;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #e11d48;
+    transform: scale(1.1) translateY(-2px);
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    display: inline-block; /* important pour le zoom */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #e11d48; /* rouge */
+    transform: scale(1.1); /* effet zoom */
+}
+
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background: white;
+    color: var(--primary);
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: translateY(-3px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.projects{
+    padding: 40px;
+    text-align: center;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.apropos h2{
+    text-decoration: underline;
+    font-size: 35px;
+}
+.apropos p{
+    font-size: 20px;
+}
+
+
+
+.about {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: large 40px;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Hamburger caché sur PC */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark);
+    transition: 0.3s ease;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: white;
+        width: 200px;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    nav a {
+        margin: 15px 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 80%;
+    }
+}
