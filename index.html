@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Samuel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="sam-dev.png" class="logo">
+            <h1>Samuel Dev</h1>
+        </div>
+
+        <nav id="nav-menu">
+            <a href="index.html">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Bonjour, je suis Samuel</h2>
+        <p>Développeur en apprentissage passioné par le code.</p>
+        <button>Voir mes projets</button>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="1000243280.jpg" alt=" Photo Samuel">
+            </div>
+
+            <div class="about-text">
+                <h2>À propos de moi</h2>
+                <p>
+                    Je suis Samuel, développeur en apprentissage passionné par l'informatique et la technologie.
+                    J’aime comprendre comment les systèmes fonctionnent et créer des solutions modernes.
+                </p>
+
+                <p>
+                    Je travaille actuellement avec HTML, CSS et Python.
+                    Mon objectif est de devenir un développeur full-stack compétent.
+                </p>
+
+                <button>Me contacter</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Mes projets</h2>
+        <div class="card">
+            Calculatrice Python</div>
+        <div class="card"> Application de gestion</div>
+        <div class="card">Exercices HTML</div>
+    </section>
+
+    <footer>
+        <p>2026 Samuel- Tous droits réservés</p>
+    </footer>
+</body>
+
+</html>
